@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeu de questions / réponses">
+    <title>Questions / Réponses</title>
+    <link rel="icon" type="image/png" href="./public/images/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400;500;600;700&family=New+Tegomin&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./public/style.css">
+</head>
+<body class="p-lg-5 p-2">
+
+    <header class="text-center div_container p-5 text-uppercase">
+        <button class="btn_deco text-uppercase" id="button_play">Jouer</button>
+    </header>
+
+    <main>
+        <div id="event_play" class="display_none">
+            <div class="text-center div_container p-5" id="game_container"></div>
+        </div>
+    </main>
+
+    <nav class="d-flex flex-wrap flex-sm-row flex-column div_container p-5 align-content-sm-start align-content-center" id="nav_btn">
+        <div class="col-6 text-center order-sm-0 order-1">
+            <a class="display_none" href="javascript:window.location.reload()" id="button_retry">
+                <button class="btn_deco text-uppercase p-3 m-2" >Recommencer</button>
+            </a>
+        </div>
+        <div class="col-6 text-center order-sm-1 order-0">
+            <button class="display_none btn_deco text-uppercase p-3 m-2 btn_next_result" id="result_btn">Résultats</button>
+            <button class="display_none btn_deco text-uppercase p-3 m-2 btn_next_result" id="next_btn">Suivant</button>
+        </div>
+    </nav>
+
+    <template id="game_template">
+        <p class="ask_deco" id="game_question"></p>
+        <div class="d-flex flex-wrap justify-content-around" id="answer_container"></div>
+    </template>
+    <template id="answer_template">
+        <div class="answer_item badge p-2 border_init event_remove event_remove ans_deco text-wrap m-2" type="button"></div>
+    </template>
+    <template id="result_template">
+        <div class="d-flex flex-wrap flex-column flex-sm-row justify-content-around result_deco">
+            <div>
+                <p class="">Réponses correctes:</p>
+                <p id="show_corrects"></p>
+            </div>
+            <div>
+                <p class="">Réponses incorrectes:</p>
+                <p id="show_errors"></p>
+            </div>
+        </div>
+        <div class="text-center result_deco">
+            <p>Merci pour votre participation</p>
+        </div>
+    </template>
+
+    <footer class="d-flex flex-wrap justify-content-around">
+        <a class="text-center p-3 text-reset logo_hover" href="https://www.linkedin.com/in/sarah-f-dev" target="_blank" rel="noreferrer">
+            <img class="logo_64 p-2" src="./public/images/linkedin.svg" alt="logo linkedin">
+        </a>
+        <a class="text-center p-3 text-reset logo_hover" href="https://github.com/SarahTelo" target="_blank" rel="noreferrer">
+            <img class="logo_64 p-2" src="./public/images/github.svg" alt="logo github">
+        </a>
+        <a class="text-center p-3 text-reset logo_hover" href="mailto:contact@sarah-dev.com" target="_blank" rel="noreferrer">
+            <img class="logo_64 p-2" src="./public/images/mail.svg" alt="logo envoyer un mail">
+        </a>
+    </footer>
+
+    <script src="./public/quizz.js"></script>
+    <script src="./public/app_init.js" type="module"></script>
+</body>
+</html>

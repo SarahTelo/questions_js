@@ -1,0 +1,116 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("./images/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    font-family: 'Amiri', serif, 'Arial', sans-serif;
+ }
+
+section {
+    background-color: rgba(217, 88, 0, 0.2);
+    box-shadow: inset 0px 0px 10px 0px #FDB400;
+    border-radius: 10px;
+}
+
+.div_container {
+    background-color: transparent;
+    line-height: 2em;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.ans_deco {
+    background-color: rgba(217, 88, 0, 0.7);
+    font-size: 1.1rem;
+}
+
+.ask_deco {
+    font-size: 1.3rem;
+}
+
+.logo_64 {
+    height: 64px;
+    width: 64px;
+}
+
+.logo_hover {
+    border: 1px solid transparent;
+}
+
+.logo_hover:hover {
+    box-shadow: 0px 0px 128px 0px #FDB400;
+    border-radius: 10px;
+    border: 1px solid rgb(253, 180, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline transparent;
+}
+
+.result_deco {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    color: black;
+}
+
+/***************************DECO DES BOUTONS***************************/
+
+.btn_deco {
+    font-weight: 700;
+    padding: 2rem;
+    box-shadow: inset 0px 0px 10px 0px #FDB400;
+    background-color: #FDB400;
+    border-radius: 10px 100px / 120px;
+    color: black;
+    background: radial-gradient(#FDB400, rgb(226, 136, 75)) ;
+}
+
+.btn_deco:hover {
+    box-shadow: inset 0px 0px 10px 0px #FDB400;
+    border-radius: 10px 100px / 120px;
+    background: radial-gradient(rgb(226, 136, 75), rgba(212, 37, 37, 0.767)) ;
+}
+
+.btn_next_result {
+    font-weight: 700;
+    padding: 2rem;
+    box-shadow: inset 0px 0px 10px 0px grey;
+    background-color: #FDB400;
+    border-radius: 10px 100px / 120px;
+    color: rgb(51, 128, 57);
+    background: radial-gradient(#FDB400, rgb(226, 136, 75)) ;
+}
+
+.btn_next_result:hover {
+    box-shadow: inset 0px 0px 10px 0px #FDB400;
+    border-radius: 10px 100px / 120px;
+    background: radial-gradient(rgb(226, 136, 75), rgb(147, 214, 147, 0.767)) ;
+}
+
+/***************************CSS DU JEU***************************/
+
+.display_none {
+    display: none;
+}
+
+.border_init {
+    border: 2px solid rgba(128,128,128,0.5);
+}
+
+.border_init:hover {
+    border: 2px solid rgba(128,128,128,0.5);
+    color: black;
+}
+
+.border_true {
+    border: 2px solid green;
+    color: black;
+}
+
+.border_false {
+    border: 2px solid red;
+    color: black;
+}
